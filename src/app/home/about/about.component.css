@@ -1,0 +1,164 @@
+#aboutSection {
+  padding-top: 40px;
+  background-color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  font-family: "merriweather";
+}
+
+.aboutContent {
+  text-align: center;
+  padding: 12px 20px;
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  line-height: 26px;
+}
+
+#showcaseArea {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  overflow: scroll;
+}
+
+.showcase {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstShowcase {
+  margin-left: calc((100vw - 300px) / 2);
+}
+
+.whiteBox {
+  background-color: white;
+  height: 250px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "roboto";
+  line-height: 24px;
+  font-weight: 350;
+  color: #4a4a4a;
+  z-index: 1;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #4a4a4a;
+}
+
+h3 {
+  margin: 20px;
+  font-size: 24px;
+  font-family: "merriweather";
+  color: #ef8686;
+}
+
+.bottomBox {
+  padding: 20px;
+  margin-top: -10px;
+  height: 120px;
+  width: 280px;
+  border-radius: 10px;
+  background-color: #a1a3a6;
+  font-size: 16px;
+  font-family: "roboto";
+  line-height: 24px;
+  font-weight: 350;
+  color: white;
+}
+
+.bottomBoxText {
+  margin-top: 10px;
+}
+
+#showcaseSelector {
+  margin: 12px;
+  display: flex;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #ef8686;
+  margin: 2.5px;
+}
+
+.activeDot {
+  background-color: #ef8686;
+}
+
+#learnMore {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#learnMoreIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: white;
+  margin: 10px;
+}
+
+#learnMoreText {
+  font-family: "roboto";
+  font-size: 20px;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .aboutContent {
+    width: 540px;
+  }
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 960px) {
+  #showcaseArea {
+    width: 960px;
+    overflow: hidden;
+  }
+
+  .showcase {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .firstShowcase {
+    margin-left: 0px;
+  }
+
+  #showcaseSelector {
+    margin: 12px;
+    display: none;
+  }
+
+  #learnMore {
+    margin-top: 15px;
+  }
+}
