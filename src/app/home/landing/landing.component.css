@@ -31,7 +31,7 @@ h1 {
   background-color: #86efa5;
 }
 
-#mainDemoButton {
+.mainDemoButton {
   width: 200px;
   height: 50px;
   background-color: #ef8686;
@@ -45,6 +45,11 @@ h1 {
   font-weight: 300;
   box-shadow: 10px 10px 10px 1px #eaeaea;
   margin: 20px 15px;
+  cursor: pointer;
+}
+.mainDemoButton:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 8px 7px 7px 1px #eaeaea;
 }
 
 #videoLink {
