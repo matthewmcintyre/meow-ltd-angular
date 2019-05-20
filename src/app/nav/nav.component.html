@@ -1,32 +1,60 @@
 <header>
   <div class="topMenuWrapper">
     <div id="topMenu">
-      <div id="option1">Find jobs</div>
-      <div id="option2" class="activeOption">Employers / Post Job</div>
-      <div id="login">My Account</div>
+      <div
+        class="option"
+        routerLink="/find-jobs"
+        routerLinkActive="activeOption"
+      >
+        <a>Find jobs</a>
+      </div>
+      <div
+        class="option"
+        routerLink="/"
+        routerLinkActive="activeOption"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a>Employers / Post Job</a>
+      </div>
+      <div class="login" routerLink="/login" routerLinkActive="activeOption">
+        <a>My Account</a>
+      </div>
     </div>
   </div>
 
   <div id="mainMenu">
-    <a routerLink="/" id="logo">
-      <span id="logoPartOne">MEOW</span>
-      <span id="logoPartTwo">Ltd.</span>
+    <a routerLink="/" class="logo">
+      <span class="logoPartOne">MEOW </span>
+      <span class="logoPartTwo">Ltd.</span>
     </a>
 
     <div class="rightMenu">
       <div id="menuOptions">
-        <a class="menuItem">Home</a>
-        <a class="menuItem">About</a>
-        <a class="menuItem">Pricing</a>
-        <a class="menuItem">Contact</a>
+        <a routerLink="/" class="menuItem">Home</a>
+        <a routerLink="/about" class="menuItem">About</a>
+        <a routerLink="/pricing" class="menuItem">Pricing</a>
+        <a routerLink="/contact" class="menuItem">Contact</a>
       </div>
 
-      <div id="demoButton">
+      <div class="demoButton">
         Book a demo
       </div>
-      <div id="burgerMenu">
-        <div id="lineOne" class="line"></div>
-        <div id="lineTwo" class="line"></div>
+      <div id="burgerMenu" (click)="menuClicked()">
+        <div
+          id="lineOne"
+          [ngClass]="{
+            lineTest: menuOpen,
+            line: !menuOpen
+          }"
+        ></div>
+        <div
+          id="lineTwo"
+          class="line"
+          [ngClass]="{
+            lineTest: menuOpen,
+            line: !menuOpen
+          }"
+        ></div>
       </div>
     </div>
   </div>

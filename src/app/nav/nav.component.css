@@ -15,27 +15,24 @@ header {
   justify-content: space-evenly;
   align-items: center;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   color: #4a4a4a;
 }
 
-#option1 {
+.option {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
+  padding: 0px 15px;
+  border-bottom: solid 5px #f7f7f8;
 }
 
-#option2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-#login {
+.login {
   display: none;
+  border-bottom: solid 5px #f7f7f8;
 }
 
 .activeOption {
@@ -53,29 +50,29 @@ header {
   justify-content: space-between;
 }
 
-#logo {
+.logo {
   border-bottom: solid 5px #4a4a4a;
-  margin: 15px;
+  margin-left: 15px;
 }
 
-#logoPartOne {
+.logoPartOne {
   color: #ef8686;
   font-family: "Roboto";
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
-#logoPartTwo {
+.logoPartTwo {
   color: #4a4a4a;
   font-family: "Roboto";
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .rightMenu {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin-right: 15px;
 }
 
 #menuOptions {
@@ -90,20 +87,20 @@ header {
   margin: 10px;
 }
 
-#demoButton {
+.demoButton {
   height: 40px;
-  width: 140px;
+  width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "roboto";
   font-weight: 300;
   background-color: #ef8686;
   color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 10px 1px #eaeaea;
-  margin: 0 15px;
+  margin: 0px 15px 0px 5px;
 }
 
 #burgerMenu {
@@ -116,22 +113,48 @@ header {
   margin: 5px;
   border-radius: 2px;
 }
+.lineTest {
+  width: 25px;
+  height: 4px;
+  background-color: red;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+@media (min-width: 350px) {
+  .demoButton {
+    width: 140px;
+    font-size: 16px;
+  }
+
+  .logoPartOne {
+    font-size: 24px;
+  }
+
+  .logoPartTwo {
+    font-size: 24px;
+  }
+}
 
 @media (min-width: 600px) {
-  #option1 {
-    width: 15%;
+  .option {
+    width: auto;
+    justify-content: flex-start;
+    padding: 0px 15px 0px 5px;
+    margin: 0px 15px;
   }
 
-  #option2 {
-    width: 25%;
-  }
-
-  #login {
+  .login {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
     margin-left: auto;
+    margin-right: 15px;
+    padding: 0px 5px 0px 15px;
+  }
+
+  header {
+    box-shadow: none;
   }
 
   #burgerMenu {
@@ -150,10 +173,11 @@ header {
 @media (min-width: 800px) {
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   #topMenu {
-    width: 960px;
+    width: 990px;
     margin: auto;
+    padding: 0px 15px;
   }
 
   #mainMenu {
