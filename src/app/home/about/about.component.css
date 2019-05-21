@@ -1,6 +1,6 @@
 #aboutSection {
   padding-top: 40px;
-  background-color: #4a4a4a;
+  background-image: url(../../../assets/trianglify-bg/trianglify-dark-bg.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,11 +10,12 @@ h2 {
   color: white;
   font-size: 32px;
   font-family: "merriweather";
+  margin-bottom: -15px;
 }
 
 .aboutContent {
   text-align: center;
-  padding: 12px 20px;
+  padding: 5px 20px;
   font-family: "roboto";
   font-size: 18px;
   font-weight: 300;
@@ -124,6 +125,45 @@ h3 {
   font-family: "roboto";
   font-size: 20px;
   color: white;
+}
+
+@media (max-width: 350px) {
+  .firstShowcase {
+    margin-left: calc((100vw - 280px) / 2);
+  }
+
+  .whiteBox {
+    height: 240px;
+    width: 280px;
+    padding: 18px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #4a4a4a;
+  }
+
+  h3 {
+    margin: 10px;
+    font-size: 22px;
+    font-family: "merriweather";
+    color: #ef8686;
+  }
+
+  .bottomBox {
+    padding: 18px;
+    height: 110px;
+    width: 260px;
+    font-size: 15px;
+  }
+
+  .bottomBoxText {
+    margin-top: 6px;
+  }
 }
 
 @media (min-width: 600px) {

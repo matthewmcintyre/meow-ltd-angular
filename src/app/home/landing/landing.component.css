@@ -19,8 +19,10 @@ h1 {
 
 .benefit {
   display: flex;
-
   align-items: center;
+}
+
+.benefitText {
 }
 
 .tickIcon {
@@ -148,6 +150,9 @@ h1 {
   width: 150px;
   height: 40px;
   border: 4px solid white;
+}
+
+@media (max-width: 350px) {
 }
 
 @media (min-width: 600px) {
