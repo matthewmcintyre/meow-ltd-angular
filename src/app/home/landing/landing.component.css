@@ -126,9 +126,14 @@ h1 {
   box-shadow: 10px 10px 10px 1px #eaeaea;
 }
 
-#trustedSection {
-  padding: 20px;
+#trustedWrapper {
+  background-color: #a1a3a6;
+  width: 100%;
+  padding: 20px 0px;
   margin-top: 50px;
+}
+
+#trustedSection {
   width: 100%;
   background-color: #a1a3a6;
   font-family: "roboto";
@@ -153,6 +158,10 @@ h1 {
 }
 
 @media (max-width: 350px) {
+  .box {
+    width: 130px;
+    height: 35px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -195,6 +204,12 @@ h1 {
   .aboutContent {
     width: 540px;
   }
+
+  #trustedSection {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -226,6 +241,10 @@ h1 {
 
 @media (min-width: 960px) {
   #homeWrapper {
+    width: 960px;
+    margin: auto;
+  }
+  #trustedSection {
     width: 960px;
     margin: auto;
   }
