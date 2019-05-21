@@ -46,6 +46,7 @@ header {
   width: 100%;
   height: 70px;
   display: flex;
+  background-color: white;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -80,7 +81,6 @@ header {
   display: none;
   font-family: "roboto";
   font-size: 16px;
-  color: #4a4a4a;
   font-weight: 400;
 }
 
@@ -88,7 +88,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
   position: absolute;
   top: 70px;
   left: 0;
@@ -101,6 +100,7 @@ header {
 
 .menuItem {
   margin: 10px;
+  color: white;
 }
 
 .demoButton {
@@ -189,12 +189,20 @@ header {
     box-shadow: none;
   }
 
+  #mainMenu {
+    background: none;
+  }
+
   #burgerMenu {
     display: none;
   }
 
   .menuOptions {
     display: inline-block;
+  }
+
+  .menuItem {
+    color: #4a4a4a;
   }
 
   #demoButton {

@@ -1,0 +1,11 @@
+#bgWrapper {
+  position: relative;
+}
+.bg {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+  width: 100vw;
+  height: 150vh;
+  background-image: url(../../assets/trianglify-bg/trianglify-light-bg.svg);
+}
