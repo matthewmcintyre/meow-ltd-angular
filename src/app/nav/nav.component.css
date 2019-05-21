@@ -96,6 +96,7 @@ header {
   width: 100%;
   background-color: #ef8686;
   border-radius: 0px 0px 13px 13px;
+  z-index: 1;
 }
 
 .menuItem {
