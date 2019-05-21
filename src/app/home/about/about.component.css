@@ -49,7 +49,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 5px 20px;
   font-size: 16px;
   font-family: "roboto";
   line-height: 24px;
@@ -63,10 +63,12 @@ h2 {
   height: 50px;
   border-radius: 50%;
   border: 4px solid #4a4a4a;
+  margin: 10px;
 }
 
 h3 {
-  margin: 20px;
+  margin-top: 15px;
+  margin-bottom: -2px;
   font-size: 24px;
   font-family: "merriweather";
   color: #ef8686;
@@ -135,7 +137,7 @@ h3 {
   .whiteBox {
     height: 240px;
     width: 280px;
-    padding: 18px;
+    padding: 10px;
     font-size: 16px;
     line-height: 22px;
   }
